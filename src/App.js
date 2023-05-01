@@ -3,10 +3,10 @@ import BookCreate from "./component/BookCreate";
 
 
 function App() {
-    const [books, setBook] = useState([]);
+    const [books, setBooks] = useState([]);
 
     const createBook = (title) => {
-        console.log('Add', title)
+        console.log('Add:', title)
     };
 
     return ( 
