@@ -7,6 +7,14 @@ import BookList from './component/BookList';
 function App() {
     const [books, setBooks] = useState([]);
 
+    const deleteBookById = (id) => {
+        const updatedbooks = books.filter((book) => {
+            return book.id !== id;
+        });
+
+        setBooks(updatedbooks);
+    };
+
     const createBook = (title) => {
         const updatedbooks = [
             ...books,
